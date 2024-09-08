@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Graph</class>
+ <widget class="QWidget" name="Graph">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>497</width>
+    <height>509</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+color: rgb(255, 224, 255);
+background-color: rgb(255, 224, 244);
+}
+background color: rgb(255, 224, 244);</string>
+  </property>
+  <widget class="QCustomPlot" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>496</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">CustomWidget {
+border: 1px solid;
+border-radius:30px;
+background-color: rgb(0, 255, 255);
+padding: 5px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="xMin">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>478</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+qproperty-alignment: 'AlignVCenter | AlignHCenter';
+background-color: rgb(255, 224, 244);
+
+color: rgb(227,5,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>-25</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label0">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>447</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignHCenter';
+background-color: rgb(255, 224, 244);
+  border: 2px solid rgb(227,5,173);
+color: rgb(227,5,173);
+}
+
+background-color : white;</string>
+   </property>
+   <property name="text">
+    <string>X MIN</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label2">
+   <property name="geometry">
+    <rect>
+     <x>124</x>
+     <y>447</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignHCenter';
+background-color: rgb(255, 224, 244);
+  border: 2px solid rgb(227,5,173);
+color: rgb(227,5,173);
+}
+
+background-color : white;</string>
+   </property>
+   <property name="text">
+    <string>X MAX</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="xMax">
+   <property name="geometry">
+    <rect>
+     <x>124</x>
+     <y>478</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+qproperty-alignment: 'AlignVCenter | AlignHCenter';
+background-color: rgb(255, 224, 244);
+
+color: rgb(227,5,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>25</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label3">
+   <property name="geometry">
+    <rect>
+     <x>247</x>
+     <y>447</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignHCenter';
+background-color: rgb(255, 224, 244);
+  border: 2px solid rgb(227,5,173);
+color: rgb(227,5,173);
+}
+
+background-color : white;</string>
+   </property>
+   <property name="text">
+    <string>X RANGE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label4">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>447</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignHCenter';
+background-color: rgb(255, 224, 244);
+  border: 2px solid rgb(227,5,173);
+color: rgb(227,5,173);
+}
+
+background-color : white;</string>
+   </property>
+   <property name="text">
+    <string>Y RANGE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="xRange">
+   <property name="geometry">
+    <rect>
+     <x>247</x>
+     <y>478</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+qproperty-alignment: 'AlignVCenter | AlignHCenter';
+background-color: rgb(255, 224, 244);
+
+color: rgb(227,5,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>-20</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="yRange">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>478</y>
+     <width>125</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+qproperty-alignment: 'AlignVCenter | AlignHCenter';
+background-color: rgb(255, 224, 244);
+
+color: rgb(227,5,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonGraph">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>261</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background-color: rgb(242, 154, 244);
+border: 2px solid rgb(227,5,173);
+
+
+color: rgb(227,5,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>Replot</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
